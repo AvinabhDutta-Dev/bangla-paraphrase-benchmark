@@ -180,6 +180,21 @@ matplotlib
 - **Tokenizer fix:** `rouge-score`'s default tokenizer silently strips non-ASCII characters, producing invalid ROUGE-L=0 scores for Bengali text. This repo's Notebook 06 uses a custom whitespace tokenizer to fix this — worth knowing if reusing this code for other non-Latin-script languages.
 - **BERTScore model:** uses `csebuetnlp/banglabert` (12-layer ELECTRA) rather than a generic multilingual model, for comparability with the original BanglaParaphrase paper's own benchmarks.
 
-## License
+## Licensing & Citation
 
-*(Add your chosen license — MIT is common for research code.)*
+### Code License
+The evaluation pipelines, fine-tuning scripts, and LLM-as-a-judge code are licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+### Dataset, Benchmark Results & Preprint License
+The 400-pair symmetric evaluation dataset, metric comparison data, and preprint text are licensed under a [Creative Commons Attribution 4.0 International License (CC-BY-4.0)](https://creativecommons.org). 
+
+If you use this benchmark pipeline, the curated evaluation subset, or our findings in your research, please cite our study:
+
+```bibtex
+@article{yourname2026bengali,
+  title={Bengali Paraphrase Generation: A Comparative Study of Encoder-Decoder and Decoder-Only Architectures},
+  author={Your Last Name, Your First Name},
+  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  year={2026}
+}
+```
