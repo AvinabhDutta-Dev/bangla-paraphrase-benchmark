@@ -1,0 +1,10 @@
+{
+  "IndicBARTSS": {
+    "total_params": 244018176,
+    "transformers_version": "5.13.1"
+  },
+  "BanglaT5": {
+    "total_params": 247577856,
+    "transformers_version": "5.13.1"
+  }
+}

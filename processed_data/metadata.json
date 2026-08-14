@@ -1,0 +1,15 @@
+{
+  "source_dataset": "BanglaParaphrase (Akil et al., 2022)",
+  "license": "CC BY-NC-SA 4.0",
+  "split_sizes": {
+    "train": 419963,
+    "validation": 23331,
+    "test": 23332
+  },
+  "cleaning_steps": [
+    "dropped rows with missing source/target",
+    "stripped whitespace",
+    "dropped rows empty after stripping",
+    "dropped exact duplicate (source, target) pairs"
+  ]
+}

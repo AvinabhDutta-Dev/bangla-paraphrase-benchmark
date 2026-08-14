@@ -1,0 +1,29 @@
+transformers>=4.44.0
+torch>=2.1.0
+peft>=0.11.0
+bitsandbytes>=0.43.0
+accelerate>=0.30.0
+sentencepiece>=0.2.0
+huggingface_hub>=0.24.0
+
+# Evaluation metrics
+sacrebleu>=2.4.0
+rouge-score>=0.1.2
+bert-score>=0.3.13
+
+# LLM-as-a-Judge
+google-genai>=0.3.0
+
+# Data handling
+pandas>=2.0.0
+pyarrow>=14.0.0
+numpy>=1.26.0
+
+# Visualization
+matplotlib>=3.8.0
+
+# Progress bars
+tqdm>=4.66.0
+
+# Bengali text normalization (not on PyPI - install via pip separately, see note below)
+# git+https://github.com/csebuetnlp/normalizer

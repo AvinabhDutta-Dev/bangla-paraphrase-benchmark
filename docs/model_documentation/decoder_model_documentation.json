@@ -1,0 +1,23 @@
+{
+  "generation_settings": {
+    "decoding_strategy": "greedy (do_sample=False)",
+    "max_new_tokens": 150,
+    "instruction_prompt": "নিচের বাক্যটি ভিন্নভাবে, একই অর্থ বজায় রেখে লিখুন।",
+    "prompt_format": "tokenizer.apply_chat_template with role='user', add_generation_prompt=True",
+    "padding_side": "left (mandatory for batched causal LM generation)"
+  },
+  "TigerLLM": {
+    "total_params": 664050816,
+    "trainable_lora_params": 13045760,
+    "transformers_version": "5.13.1",
+    "batch_size_used": 128,
+    "truncated_generations": "4 (0.02%)"
+  },
+  "Qwen2.5": {
+    "total_params": 907081216,
+    "trainable_lora_params": 18464768,
+    "transformers_version": "5.13.1",
+    "batch_size_used": 96,
+    "truncated_generations": "1219 (5.22%)"
+  }
+}

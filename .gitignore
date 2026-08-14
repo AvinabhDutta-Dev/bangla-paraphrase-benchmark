@@ -1,0 +1,39 @@
+# Jupyter/Colab
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Secrets
+.env
+*api_key*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large/local-only data (model weights — not pushed to GitHub, hosted on Hugging Face Hub instead)
+checkpoints/
+base_model_cache/
+
+# Intermediate LLM-judge checkpoint (superseded by final evaluated matrix)
+outputs/llm_judge/llm_judge_progress_checkpoint.csv
+
+# Hugging Face export staging (merged models before upload — not pushed to GitHub)
+outputs/hf_export/
+
+# Original dataset (kept as a link in README, not duplicated here)
+BanglaParaphrase/
+
+# Large per-sentence metric exports — regenerable via 06_compute_metrics.ipynb;
+# only the small aggregated summaries (model_summary.csv, qualitative_comparison_table.csv)
+# and the LLM-judge matrix are tracked
+outputs/metrics/all_metrics_long_format.xlsx
+outputs/metrics/all_metrics_long_format.parquet
+
+# Intermediate data artifact, not part of the committed processed_data trio
+processed_data/train_clean.parquet
