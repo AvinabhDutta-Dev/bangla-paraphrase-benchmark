@@ -47,6 +47,50 @@ The benchmark compares four fine-tuned models for Bengali paraphrase generation 
 
 **Evaluation scope:** These results apply to the benchmark's evaluated test distribution and experimental settings. They should not be interpreted as a universal ranking across all Bengali text or paraphrase-generation tasks.
 
+## Results Visualizations
+
+### 1. Automated Metric Comparison
+
+![Comparison of BLEU, ROUGE-L, BERTScore F1, and PINC across four Bengali paraphrase models](outputs/metrics/metric_suite_bar_chart.png)
+
+BanglaT5 achieves the highest BLEU, ROUGE-L, and BERTScore F1 scores, while TigerLLM achieves the highest PINC score among the evaluated models.
+
+### 2. Semantic Adequacy vs. Lexical Diversity
+
+![Adequacy-diversity trade-off across the four models](outputs/metrics/adequacy_diversity_scatter.png)
+
+This figure illustrates the trade-off between semantic adequacy, measured using BERTScore F1, and lexical diversity, measured using PINC.
+
+### 3. Automated Metric Validity
+
+![Empirical correlations between automated metrics and LLM-as-a-judge semantic scores](outputs/llm_judge/metric_validity_correlation_matrix.png)
+
+The analysis compares automated metric scores with LLM-judge assessments of semantic meaning preservation across 400 model-output judgments. BERTScore shows a stronger rank correlation with judge-assessed meaning preservation than BLEU and ROUGE-L in this evaluation, while PINC shows a small negative correlation.
+
+### 4. Parameter Efficiency vs. Quality
+
+![Trainable parameters versus BERTScore F1](outputs/metrics/param_efficiency_scatter.png)
+
+This comparison highlights the relationship between the number of trainable parameters and semantic similarity for full fine-tuning and QLoRA-based approaches.
+
+### 5. Per-Sentence Score Distributions
+
+![Per-sentence distributions of BLEU, ROUGE-L, BERTScore F1, and PINC](outputs/metrics/distribution_violin_plots.png)
+
+These distributions show variation in model performance across individual test examples, complementing the aggregate scores in the results table.
+
+### 6. Training-Loss Curves
+
+![Training and validation loss curves across the fine-tuned models](outputs/combined_loss_curves_panels_v2.png)
+
+The training curves provide additional context for comparing model convergence and training behavior.
+
+### 7. Length-Stratified Performance
+
+![Model performance across different input-length groups](outputs/metrics/length_stratified_performance.png)
+
+This analysis examines how evaluation performance varies with input length rather than relying solely on overall averages.
+
 ## Tech Stack
 
 | Category | Tools / Libraries |
@@ -114,20 +158,19 @@ bengali-paraphrasing/
 │   └── 07_metric_validation_and_error_analysis.ipynb
 │
 ├── outputs/
-│   ├── metrics/
-│   │   ├── model_summary.csv
-│   │   └── qualitative_comparison_table.csv
+│   ├── combined_loss_curves_panels_v2.png
+│   ├── combined_loss_curves_panels_v2.svg
+│   ├── generations/
 │   ├── llm_judge/
-│   │   └── bengali_paraphrase_final_evaluated_matrix.csv
-│   └── figures/
-│       ├── combined_loss_curves_panels_v2.png (+ .svg)
+│   │   ├── bengali_paraphrase_final_evaluated_matrix.csv
+│   │   ├── metric_validity_correlation_matrix.png
+│   │   └── metric_validity_correlation_matrix.svg
+│   └── metrics/
 │       ├── adequacy_diversity_scatter.png (+ .svg)
-│       ├── metric_suite_bar_chart.png (+ .svg)
-│       ├── param_efficiency_scatter.png (+ .svg)
 │       ├── distribution_violin_plots.png (+ .svg)
 │       ├── length_stratified_performance.png (+ .svg)
-│       └── matrix_correlation_scatter.png (+ .svg)
-│
+│       ├── metric_suite_bar_chart.png (+ .svg)
+│       └── param_efficiency_scatter.png (+ .svg)│
 └── docs/
     └── model_documentation/
         ├── seq2seq_model_documentation.json
