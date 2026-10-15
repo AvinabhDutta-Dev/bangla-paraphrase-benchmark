@@ -1,10 +1,51 @@
 # Bengali Paraphrase Generation: A Comparative Study of Encoder-Decoder and Decoder-Only Architectures
 
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/Framework-PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Hugging Face](https://img.shields.io/badge/Models-Hugging%20Face-yellow?logo=huggingface)](https://huggingface.co/AvinabhDutta-Dev)
+[![PEFT](https://img.shields.io/badge/Fine--tuning-PEFT%20%2F%20QLoRA-6A5ACD)](https://huggingface.co/docs/peft)
+[![Language](https://img.shields.io/badge/Language-Bengali%20%2F%20Bangla-00897B)](https://github.com/AvinabhDutta-Dev/bangla-paraphrase-benchmark)
+
 ## Introduction
 
 This project benchmarks four fine-tuned language models — two encoder-decoder (IndicBARTSS, BanglaT5) and two decoder-only QLoRA-tuned models (TigerLLM-1B, Qwen2.5-1.5B-Instruct) — on Bengali paraphrase generation, using the [BanglaParaphrase](https://arxiv.org/abs/2210.05109) dataset.
 
-Beyond standard automated metrics (BLEU, ROUGE-L, BERTScore, PINC), this project empirically tests *whether those metrics are trustworthy* for paraphrase evaluation in a low-resource language. A 400-pair, four-model symmetric subset was independently scored by an LLM-as-a-judge (Gemini 3.5 Flash-Lite) on semantic meaning preservation, fluency, and meaning reversal, and the correlation between automated metrics and judge scores is reported directly — surfacing where surface-overlap metrics like BLEU diverge from actual semantic quality.
+Beyond standard automated metrics (BLEU, ROUGE-L, BERTScore, and PINC), this project investigates how well these metrics reflect actual paraphrase quality in a low-resource language. An LLM-as-a-judge evaluated a symmetric subset of 100 source sentences across four model outputs, producing 400 model-output judgments. The evaluation considers semantic meaning preservation, fluency, and meaning reversal, and compares judge assessments with automated metric scores to identify where surface-level overlap diverges from perceived semantic quality.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Key Results](#key-results)
+- [Tech Stack](#tech-stack)
+- [Evaluation Pipeline](#evaluation-pipeline-flow)
+- [Project Structure](#project-structure)
+- [Setup and Reproduction](#setup)
+- [Data Pipeline and Model Checkpoints](#data-pipeline)
+- [Running the Notebooks](#running)
+- [Notes and Evaluation Caveats](#notes)
+- [Licensing and Citation](#licensing--citation)
+
+## Key Results
+
+The benchmark compares four fine-tuned models for Bengali paraphrase generation using automated metrics and a separate LLM-as-a-judge analysis.
+
+### Automated Evaluation
+
+| Model | BLEU | ROUGE-L | BERTScore F1 | PINC |
+|---|---:|---:|---:|---:|
+| BanglaT5 | 18.88 | 0.4820 | 0.9472 | 0.6303 |
+| TigerLLM-1B (QLoRA) | 18.69 | 0.4655 | 0.9419 | 0.7767 |
+| IndicBARTSS | 14.07 | 0.4173 | 0.9386 | 0.5650 |
+| Qwen2.5-1.5B (QLoRA) | 12.71 | 0.3774 | 0.9228 | 0.7734 |
+
+### Main Findings
+
+- **BanglaT5** achieved the highest BLEU, ROUGE-L, and BERTScore F1 among the four evaluated models.
+- **TigerLLM-1B** achieved the highest PINC score, indicating greater lexical difference from the source under this metric.
+- The LLM-as-a-judge analysis examines meaning preservation, fluency, and meaning reversal to investigate whether automated metrics reflect perceived paraphrase quality.
+- The results illustrate why paraphrase generation should be evaluated using multiple complementary metrics rather than BLEU alone.
+
+**Evaluation scope:** These results apply to the benchmark's evaluated test distribution and experimental settings. They should not be interpreted as a universal ranking across all Bengali text or paraphrase-generation tasks.
 
 ## Tech Stack
 
@@ -190,11 +231,17 @@ The 400-pair symmetric evaluation dataset, metric comparison data, and preprint 
 
 If you use this benchmark pipeline, the curated evaluation subset, or our findings in your research, please cite our study:
 
-```bibtex
-@article{yourname2026bengali,
-  title={Bengali Paraphrase Generation: A Comparative Study of Encoder-Decoder and Decoder-Only Architectures},
-  author={Your Last Name, Your First Name},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2026}
-}
+### Citation
+
+If you use this benchmark, its evaluation pipeline, or its findings, please cite the project repository:
+
+```text
+AvinabhDutta-Dev. Bengali Paraphrase Generation:
+A Comparative Study of Encoder-Decoder and Decoder-Only Architectures.
+GitHub repository:
+https://github.com/AvinabhDutta-Dev/bangla-paraphrase-benchmark
 ```
+
+For work involving the underlying dataset or pretrained models, please also cite the original resources linked in this README and the corresponding Hugging Face model cards.
+
+A formal BibTeX citation for this study will be added when its bibliographic details are finalized.
