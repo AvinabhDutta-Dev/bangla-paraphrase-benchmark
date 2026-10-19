@@ -1,3 +1,13 @@
+```html
+<p align="center">
+  <img
+    src="docs/images/bengali-paraphrase-hero.png"
+    alt="Bengali paraphrase benchmark comparing encoder-decoder and decoder-only models using automated metrics and LLM-as-a-judge analysis"
+    width="100%"
+  />
+</p>
+```
+
 # Bengali Paraphrase Generation: A Comparative Study of Encoder-Decoder and Decoder-Only Architectures
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
