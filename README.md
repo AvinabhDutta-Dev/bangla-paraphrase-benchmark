@@ -1,4 +1,3 @@
-```html
 <p align="center">
   <img
     src="docs/images/bengali-paraphrase-hero.png"
@@ -6,7 +5,7 @@
     width="100%"
   />
 </p>
-```
+
 
 # Bengali Paraphrase Generation: A Comparative Study of Encoder-Decoder and Decoder-Only Architectures
 
