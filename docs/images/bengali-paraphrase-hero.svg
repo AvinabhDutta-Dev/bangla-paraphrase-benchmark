@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="700" viewBox="0 0 2200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Bengali Paraphrase Generation Benchmark</title>
+  <desc id="desc">A wide research banner about Bengali paraphrase generation, model comparisons, semantic preservation, and lexical diversity.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07162b"/><stop offset="0.53" stop-color="#102845"/><stop offset="1" stop-color="#151a3a"/></linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd68a"/><stop offset="1" stop-color="#ff8a70"/></linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#52e1d4"/><stop offset="1" stop-color="#69a9ff"/></linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#182f4d" stop-opacity="0.95"/><stop offset="1" stop-color="#1b2547" stop-opacity="0.92"/></linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#397fbb" stop-opacity="0.32"/><stop offset="1" stop-color="#397fbb" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#9bc4ee" stroke-opacity="0.06" stroke-width="1"/></pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#020914" flood-opacity="0.35"/></filter>
+  </defs>
+  <rect width="2200" height="700" rx="34" fill="url(#bg)"/>
+  <rect width="2200" height="700" rx="34" fill="url(#grid)"/>
+  <ellipse cx="1720" cy="300" rx="650" ry="560" fill="url(#glow)"/>
+  <circle cx="1950" cy="80" r="190" fill="none" stroke="#54d6d1" stroke-opacity="0.10" stroke-width="2"/>
+  <circle cx="1950" cy="80" r="135" fill="none" stroke="#54d6d1" stroke-opacity="0.10" stroke-width="2"/>
+  <circle cx="1950" cy="80" r="78" fill="none" stroke="#54d6d1" stroke-opacity="0.10" stroke-width="2"/>
+  <!-- left editorial block -->
+  <rect x="104" y="94" width="420" height="42" rx="21" fill="#183957" stroke="#4a95af" stroke-opacity="0.65"/>
+  <circle cx="128" cy="115" r="5" fill="#5ce0d2"/>
+  <text x="148" y="123" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3.2" fill="#bceeea">LOW-RESOURCE NLP  /  RESEARCH</text>
+  <text x="100" y="242" font-family="Inter, Arial, sans-serif" font-size="73" font-weight="760" letter-spacing="-2.2" fill="#f6f8ff">SAME MEANING.</text>
+  <text x="100" y="332" font-family="Inter, Arial, sans-serif" font-size="73" font-weight="760" letter-spacing="-2.2" fill="url(#warm)">NEW WORDING.</text>
+  <text x="104" y="390" font-family="'Noto Sans Bengali', sans-serif" font-size="34" font-weight="600" fill="#c8d7ed">একই অর্থ  •  ভিন্ন প্রকাশ</text>
+  <text x="104" y="438" font-family="Inter, Arial, sans-serif" font-size="24" fill="#b7c8dd">Bengali paraphrase generation across four fine-tuned models</text>
+  <text x="104" y="474" font-family="Inter, Arial, sans-serif" font-size="24" fill="#b7c8dd">Encoder–decoder vs. decoder-only architectures</text>
+  <!-- model chips -->
+  <g font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600">
+    <rect x="104" y="535" width="185" height="44" rx="12" fill="#172f4b" stroke="#4c7d9f" stroke-opacity="0.75"/><text x="196" y="563" text-anchor="middle" fill="#dbeaff">IndicBARTSS</text>
+    <rect x="302" y="535" width="156" height="44" rx="12" fill="#172f4b" stroke="#4c7d9f" stroke-opacity="0.75"/><text x="380" y="563" text-anchor="middle" fill="#dbeaff">BanglaT5</text>
+    <rect x="471" y="535" width="172" height="44" rx="12" fill="#172f4b" stroke="#4c7d9f" stroke-opacity="0.75"/><text x="557" y="563" text-anchor="middle" fill="#dbeaff">TigerLLM-1B</text>
+    <rect x="656" y="535" width="210" height="44" rx="12" fill="#172f4b" stroke="#4c7d9f" stroke-opacity="0.75"/><text x="761" y="563" text-anchor="middle" fill="#dbeaff">Qwen2.5-1.5B</text>
+  </g>
+  <text x="104" y="634" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" letter-spacing="2.3" fill="#819bb9">SEMANTIC ADEQUACY  ·  LEXICAL DIVERSITY  ·  METRIC VALIDATION</text>
+  <!-- right panel: concept diagram -->
+  <g filter="url(#shadow)">
+    <rect x="1010" y="84" width="1095" height="532" rx="30" fill="url(#panel)" stroke="#6685a7" stroke-opacity="0.42"/>
+  </g>
+  <text x="1060" y="132" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#83c9d5">THE BENCHMARK AT A GLANCE</text>
+  <!-- input card -->
+  <rect x="1060" y="168" width="390" height="120" rx="18" fill="#10243c" stroke="#58d6cf" stroke-opacity="0.75" stroke-width="2"/>
+  <text x="1090" y="203" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1.5" fill="#6de2d4">SOURCE SENTENCE</text>
+  <text x="1090" y="245" font-family="'Noto Sans Bengali', sans-serif" font-size="26" fill="#f0f6ff">বাংলা বাক্য</text>
+  <text x="1090" y="270" font-family="Inter, Arial, sans-serif" font-size="14" fill="#99b4d0">Meaning to preserve</text>
+  <!-- arrow -->
+  <path d="M1466 228H1520" fill="none" stroke="url(#cyan)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1506 215L1520 228L1506 241" fill="none" stroke="#69dcd6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- model comparison card -->
+  <rect x="1540" y="168" width="510" height="120" rx="18" fill="#172a46" stroke="#809cf3" stroke-opacity="0.7" stroke-width="2"/>
+  <text x="1572" y="203" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1.5" fill="#b7c5ff">MODEL COMPARISON</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle">
+    <rect x="1572" y="222" width="104" height="40" rx="10" fill="#253a60"/><text x="1624" y="247" fill="#e5eaff">Seq2Seq</text>
+    <rect x="1688" y="222" width="145" height="40" rx="10" fill="#253a60"/><text x="1760" y="247" fill="#e5eaff">Decoder-only</text>
+    <rect x="1845" y="222" width="172" height="40" rx="10" fill="#253a60"/><text x="1931" y="247" fill="#e5eaff">QLoRA fine-tuning</text>
+  </g>
+  <!-- connector to analysis panel -->
+  <path d="M1795 303V340" fill="none" stroke="#91a8c9" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1784 329L1795 341L1806 329" fill="none" stroke="#91a8c9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1060" y="367" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2.5" fill="#f2bc80">COMPLEMENTARY EVALUATION</text>
+  <!-- four metric tiles -->
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="1060" y="395" width="218" height="99" rx="16" fill="#152d49" stroke="#537e9f" stroke-opacity="0.65"/><circle cx="1090" cy="425" r="7" fill="#55d7cc"/><text x="1110" y="431" font-size="19" font-weight="700" fill="#f3f7ff">BLEU</text><path d="M1088 461H1245" stroke="#4b6888" stroke-width="7" stroke-linecap="round"/><path d="M1088 461H1174" stroke="#55d7cc" stroke-width="7" stroke-linecap="round"/>
+    <rect x="1295" y="395" width="218" height="99" rx="16" fill="#152d49" stroke="#537e9f" stroke-opacity="0.65"/><circle cx="1325" cy="425" r="7" fill="#f2b977"/><text x="1345" y="431" font-size="19" font-weight="700" fill="#f3f7ff">ROUGE-L</text><path d="M1323 461H1480" stroke="#4b6888" stroke-width="7" stroke-linecap="round"/><path d="M1323 461H1415" stroke="#f2b977" stroke-width="7" stroke-linecap="round"/>
+    <rect x="1530" y="395" width="238" height="99" rx="16" fill="#152d49" stroke="#537e9f" stroke-opacity="0.65"/><circle cx="1560" cy="425" r="7" fill="#9faeff"/><text x="1580" y="431" font-size="19" font-weight="700" fill="#f3f7ff">BERTScore</text><path d="M1558 461H1735" stroke="#4b6888" stroke-width="7" stroke-linecap="round"/><path d="M1558 461H1697" stroke="#9faeff" stroke-width="7" stroke-linecap="round"/>
+    <rect x="1785" y="395" width="265" height="99" rx="16" fill="#152d49" stroke="#537e9f" stroke-opacity="0.65"/><circle cx="1815" cy="425" r="7" fill="#ff9d93"/><text x="1835" y="431" font-size="19" font-weight="700" fill="#f3f7ff">PINC</text><path d="M1813 461H2018" stroke="#4b6888" stroke-width="7" stroke-linecap="round"/><path d="M1813 461H1960" stroke="#ff9d93" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <text x="1060" y="548" font-family="Inter, Arial, sans-serif" font-size="16" fill="#b7c9e0">Automated metrics</text>
+  <circle cx="1240" cy="543" r="4" fill="#5bd9d0"/>
+  <text x="1260" y="548" font-family="Inter, Arial, sans-serif" font-size="16" fill="#b7c9e0">LLM-as-a-judge</text>
+  <circle cx="1435" cy="543" r="4" fill="#ffb88c"/>
+  <text x="1455" y="548" font-family="Inter, Arial, sans-serif" font-size="16" fill="#b7c9e0">Meaning preservation · Fluency · Meaning reversal</text>
+  <text x="1060" y="588" font-family="Inter, Arial, sans-serif" font-size="13" letter-spacing="1.2" fill="#708cab">CONCEPTUAL VISUAL — NO PERFORMANCE VALUES IMPLIED</text>
+  <!-- tiny decorative constellation -->
+  <g stroke="#69bfc9" stroke-opacity="0.5" stroke-width="1.5" fill="#69bfc9">
+    <path d="M934 150L958 126L979 151L1000 124" fill="none"/><circle cx="934" cy="150" r="3"/><circle cx="958" cy="126" r="3"/><circle cx="979" cy="151" r="3"/><circle cx="1000" cy="124" r="3"/>
+    <path d="M922 575L948 551L973 575L995 551" fill="none"/><circle cx="922" cy="575" r="3"/><circle cx="948" cy="551" r="3"/><circle cx="973" cy="575" r="3"/><circle cx="995" cy="551" r="3"/>
+  </g>
+</svg>
