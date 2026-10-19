@@ -104,15 +104,15 @@ This analysis examines how evaluation performance varies with input length rathe
 
 | Category | Tools / Libraries |
 |---|---|
-| Language | Python 3 |
-| Model training | `transformers`, `peft` (QLoRA/LoRA), `bitsandbytes`, PyTorch |
-| Base models | IndicBARTSS, BanglaT5, TigerLLM-1B-it, Qwen2.5-1.5B-Instruct |
+| Language | <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="20" height="20" /> Python 3 |
+| Model training | `transformers`, `peft` (QLoRA/LoRA), `bitsandbytes`, <img src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="PyTorch" width="20" height="20" /> PyTorch |
+| Base models | <img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="Hugging Face Hub" width="20" height="20" /> IndicBARTSS, BanglaT5, TigerLLM-1B-it, Qwen2.5-1.5B-Instruct |
 | Evaluation metrics | `sacrebleu`, `rouge-score`, `bert-score`, custom PINC implementation |
-| LLM-as-a-Judge | Google `google-genai` SDK, Gemini 3.5 Flash-Lite |
-| Data handling | `pandas`, Parquet (via `pyarrow`) |
+| LLM-as-a-Judge | Google `google-genai` SDK, <img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="Google Gemini" width="20" height="20" /> Gemini 3.5 Flash-Lite |
+| Data handling | <img src="https://cdn.simpleicons.org/pandas/150458" alt="pandas" width="20" height="20" /> `pandas`, Parquet (via `pyarrow`) |
 | Visualization | `matplotlib` |
 | Text normalization | `csebuetnlp/normalizer`, `sentencepiece` |
-| Environment | Google Colab (GPU: T4), Google Drive (persistent storage) |
+| Environment | <img src="https://cdn.simpleicons.org/googlecolab/F9AB00" alt="Google Colab" width="20" height="20" /> Google Colab (GPU: T4), <img src="https://cdn.simpleicons.org/googledrive/4285F4" alt="Google Drive" width="20" height="20" /> Google Drive (persistent storage) |
 
 ## Evaluation Pipeline Flow
 
