@@ -34,6 +34,7 @@ Beyond standard automated metrics (BLEU, ROUGE-L, BERTScore, and PINC), this pro
 
 - [Introduction](#introduction)
 - [Key Results](#key-results)
+- [Results Visualizations](#results-visualizations)
 - [Tech Stack](#tech-stack)
 - [Evaluation Pipeline](#evaluation-pipeline-flow)
 - [Project Structure](#project-structure)
@@ -163,7 +164,7 @@ bengali-paraphrasing/
 ├── .gitignore
 ├── LICENSE
 │
-├── notebooks/
+├── Notebooks/
 │   ├── 01_preprocessing.ipynb
 │   ├── 02_train_indicbartss.ipynb
 │   ├── 03_train_banglat5.ipynb
@@ -172,8 +173,10 @@ bengali-paraphrasing/
 │   ├── 04b_qwen_full_eval.ipynb
 │   ├── 05a_generate_seq2seq.ipynb
 │   ├── 05b_generate_decoder_llms.ipynb
-│   ├── 06_compute_metrics.ipynb
-│   └── 07_metric_validation_and_error_analysis.ipynb
+│   ├── 06_(EVALUATION)Compute_Metrics.ipynb
+│   ├── 07_Metric_Validation_and_Error_Analysis.ipynb
+│   ├── combined_loss_curves.ipynb
+│   └── data_verification.ipynb
 │
 ├── outputs/
 │   ├── combined_loss_curves_panels_v2.png
@@ -188,7 +191,7 @@ bengali-paraphrasing/
 │       ├── distribution_violin_plots.png (+ .svg)
 │       ├── length_stratified_performance.png (+ .svg)
 │       ├── metric_suite_bar_chart.png (+ .svg)
-│       └── param_efficiency_scatter.png (+ .svg)│
+│       └── param_efficiency_scatter.png (+ .svg)
 └── docs/
     └── model_documentation/
         ├── seq2seq_model_documentation.json
