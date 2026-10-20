@@ -21,6 +21,15 @@ This project benchmarks four fine-tuned language models — two encoder-decoder 
 
 Beyond standard automated metrics (BLEU, ROUGE-L, BERTScore, and PINC), this project investigates how well these metrics reflect actual paraphrase quality in a low-resource language. An LLM-as-a-judge evaluated a symmetric subset of 100 source sentences across four model outputs, producing 400 model-output judgments. The evaluation considers semantic meaning preservation, fluency, and meaning reversal, and compares judge assessments with automated metric scores to identify where surface-level overlap diverges from perceived semantic quality.
 
+<p align="center">
+  <a href="https://huggingface.co/spaces/AvinabhDutta-Dev/beyond-bleu-demo">
+    <img
+      src="https://img.shields.io/badge/Try%20the%20Live%20Demo-Hugging%20Face%20Spaces-yellow?style=for-the-badge&logo=huggingface"
+      alt="Try the live Bengali paraphrasing demo on Hugging Face Spaces"
+    />
+  </a>
+</p>
+
 ## Table of Contents
 
 - [Introduction](#introduction)
